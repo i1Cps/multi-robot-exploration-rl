@@ -10,8 +10,6 @@ Permanantly source humble environment
 ```
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 ```
-
-```
 Download workspace
 ```
 git clone https://github.com/i1Cps/testcm30082ros.git
