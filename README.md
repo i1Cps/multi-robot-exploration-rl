@@ -25,14 +25,14 @@ Permanantly source humble environment
 ```
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 ```
-Download workspace
+### Download workspace
 ```
 git clone https://github.com/i1Cps/testcm30082ros.git
 cd testcm30082ros
 
 ```
 
-Install package dependencies
+### Install package dependencies
 ```
 sudo rosdep init
 rosdep update
