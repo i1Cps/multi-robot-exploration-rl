@@ -1,4 +1,19 @@
 # testcm30082ros
+## Usage
+
+To start up the gazebo environment with the robots open a fresh terminal and run:
+```
+cd testcm30082ros
+source install/setup.bash
+ros2 launch start_rl_environment main.launch.py
+```
+
+To begin training the robots open a new fresh terminal and run:
+```
+cd testcm30082ros
+source install/setup.bash
+ros2 launch start_reinforcement_learning start_learning.launch.py
+```
 
 ## Installation
 
