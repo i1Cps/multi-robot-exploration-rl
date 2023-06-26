@@ -1,0 +1,47 @@
+[0.206s] Invoking command in '/home/unruly/testcm30082ros/build/start_rl_environment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unruly/testcm30082ros/install/start_reinforcement_learning:/opt/ros/humble /usr/bin/cmake --build /home/unruly/testcm30082ros/build/start_rl_environment -- -j12 -l12
+[0.237s] Invoked command in '/home/unruly/testcm30082ros/build/start_rl_environment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unruly/testcm30082ros/install/start_reinforcement_learning:/opt/ros/humble /usr/bin/cmake --build /home/unruly/testcm30082ros/build/start_rl_environment -- -j12 -l12
+[0.263s] Invoking command in '/home/unruly/testcm30082ros/build/start_rl_environment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unruly/testcm30082ros/install/start_reinforcement_learning:/opt/ros/humble /usr/bin/cmake --install /home/unruly/testcm30082ros/build/start_rl_environment
+[0.270s] -- Install configuration: ""
+[0.270s] -- Execute custom install script
+[0.271s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/gazebo_control.xacro
+[0.271s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/inertial_macros.xacro
+[0.271s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/lidar.xacro
+[0.271s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/robot.urdf.xacro
+[0.271s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/robot_core.xacro
+[0.272s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/main.launch.py
+[0.272s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/spawn_robots.launch.py
+[0.272s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/start_robots.launch.py
+[0.272s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/start_world.launch.py
+[0.272s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/worlds/map1.world
+[0.272s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/worlds/map2.world
+[0.273s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/cylinder_g/model.config
+[0.273s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/cylinder_g/model.sdf
+[0.273s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/goal_box/model.config
+[0.273s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/goal_box/model.sdf
+[0.273s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/grey_wall/materials/scripts/grey_wall.material
+[0.273s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/grey_wall/materials/textures/grey_wall.png
+[0.273s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/grey_wall/model-1_3.sdf
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/grey_wall/model-1_4.sdf
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/grey_wall/model.config
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/grey_wall/model.sdf
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/ground_plane/model-1_2.sdf
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/ground_plane/model-1_3.sdf
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/ground_plane/model-1_4.sdf
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/ground_plane/model.config
+[0.274s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/models/ground_plane/model.sdf
+[0.275s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/ament_index/resource_index/package_run_dependencies/start_rl_environment
+[0.275s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/ament_index/resource_index/parent_prefix_path/start_rl_environment
+[0.275s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/ament_prefix_path.sh
+[0.275s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/ament_prefix_path.dsv
+[0.276s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/path.sh
+[0.276s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/path.dsv
+[0.276s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.bash
+[0.276s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.sh
+[0.276s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.zsh
+[0.277s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.dsv
+[0.277s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/package.dsv
+[0.284s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/ament_index/resource_index/packages/start_rl_environment
+[0.284s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/cmake/start_rl_environmentConfig.cmake
+[0.284s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/cmake/start_rl_environmentConfig-version.cmake
+[0.285s] -- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/package.xml
+[0.287s] Invoked command in '/home/unruly/testcm30082ros/build/start_rl_environment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unruly/testcm30082ros/install/start_reinforcement_learning:/opt/ros/humble /usr/bin/cmake --install /home/unruly/testcm30082ros/build/start_rl_environment

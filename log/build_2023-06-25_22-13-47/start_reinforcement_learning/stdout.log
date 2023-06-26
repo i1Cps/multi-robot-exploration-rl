@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating start_reinforcement_learning.egg-info
+writing start_reinforcement_learning.egg-info/PKG-INFO
+writing dependency_links to start_reinforcement_learning.egg-info/dependency_links.txt
+writing entry points to start_reinforcement_learning.egg-info/entry_points.txt
+writing requirements to start_reinforcement_learning.egg-info/requires.txt
+writing top-level names to start_reinforcement_learning.egg-info/top_level.txt
+writing manifest file 'start_reinforcement_learning.egg-info/SOURCES.txt'
+reading manifest file 'start_reinforcement_learning.egg-info/SOURCES.txt'
+writing manifest file 'start_reinforcement_learning.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/unruly/testcm30082ros/install/start_reinforcement_learning/lib/python3.10/site-packages/start-reinforcement-learning.egg-link (link to .)
+Installing run_maddpg script to /home/unruly/testcm30082ros/install/start_reinforcement_learning/lib/start_reinforcement_learning
+
+Installed /home/unruly/testcm30082ros/build/start_reinforcement_learning
+running install_data
+creating /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/ament_index
+creating /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/ament_index/resource_index
+creating /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/ament_index/resource_index/packages
+copying resource/start_reinforcement_learning -> /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/ament_index/resource_index/packages
+copying package.xml -> /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/start_reinforcement_learning
+creating /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/start_reinforcement_learning/launch
+copying launch/start_learning.launch.py -> /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/start_reinforcement_learning/launch

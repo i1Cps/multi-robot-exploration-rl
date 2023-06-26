@@ -1,0 +1,28 @@
+[0.485s] Invoking command in '/home/unruly/testcm30082ros/build/start_reinforcement_learning': PYTHONPATH=/home/unruly/testcm30082ros/build/start_reinforcement_learning/prefix_override:/home/unruly/testcm30082ros/install/start_reinforcement_learning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/unruly/testcm30082ros/build/start_reinforcement_learning/build --no-deps install_data
+[0.683s] running develop
+[0.683s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.683s]   warnings.warn(
+[0.684s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.684s]   warnings.warn(
+[0.731s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[0.731s]   warnings.warn(
+[0.731s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[0.731s]   warnings.warn(
+[0.731s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[0.731s]   warnings.warn(
+[0.813s] running egg_info
+[0.813s] writing start_reinforcement_learning.egg-info/PKG-INFO
+[0.814s] writing dependency_links to start_reinforcement_learning.egg-info/dependency_links.txt
+[0.814s] writing entry points to start_reinforcement_learning.egg-info/entry_points.txt
+[0.814s] writing requirements to start_reinforcement_learning.egg-info/requires.txt
+[0.814s] writing top-level names to start_reinforcement_learning.egg-info/top_level.txt
+[0.815s] reading manifest file 'start_reinforcement_learning.egg-info/SOURCES.txt'
+[0.816s] writing manifest file 'start_reinforcement_learning.egg-info/SOURCES.txt'
+[0.817s] running build_ext
+[0.817s] Creating /home/unruly/testcm30082ros/install/start_reinforcement_learning/lib/python3.10/site-packages/start-reinforcement-learning.egg-link (link to .)
+[0.818s] Installing run_maddpg script to /home/unruly/testcm30082ros/install/start_reinforcement_learning/lib/start_reinforcement_learning
+[0.818s] 
+[0.818s] Installed /home/unruly/testcm30082ros/build/start_reinforcement_learning
+[0.818s] running install_data
+[0.818s] copying package.xml -> /home/unruly/testcm30082ros/install/start_reinforcement_learning/share/start_reinforcement_learning
+[0.837s] Invoked command in '/home/unruly/testcm30082ros/build/start_reinforcement_learning' returned '0': PYTHONPATH=/home/unruly/testcm30082ros/build/start_reinforcement_learning/prefix_override:/home/unruly/testcm30082ros/install/start_reinforcement_learning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/unruly/testcm30082ros/build/start_reinforcement_learning/build --no-deps install_data

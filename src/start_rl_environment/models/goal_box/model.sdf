@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='goal_box'>
+    <pose frame=''>0 0 0 0 -0 -1.5708</pose>
+    <link name='goal_box'>
+      <visual name='goal_box'>
+        <pose frame=''>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.2</radius>
+            <length>0.001</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='goal_box'>
+        <pose frame=''>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.2</radius>
+            <length>0.001</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+    </link>
+    <static>0</static>
+  </model>
+</sdf>
+<!--           <ambient>1 0 0 1</ambient>
+-->

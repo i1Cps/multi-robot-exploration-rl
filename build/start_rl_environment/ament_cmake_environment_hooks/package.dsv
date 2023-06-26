@@ -1,0 +1,4 @@
+source;share/start_rl_environment/local_setup.bash
+source;share/start_rl_environment/local_setup.dsv
+source;share/start_rl_environment/local_setup.sh
+source;share/start_rl_environment/local_setup.zsh

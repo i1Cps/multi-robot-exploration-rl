@@ -1,0 +1,31 @@
+-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/unruly/testcm30082ros/build/start_rl_environment
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/gazebo_control.xacro
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/inertial_macros.xacro
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/lidar.xacro
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/robot.urdf.xacro
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/description/robot_core.xacro
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/main_launch_sim.launch.py
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/spawn_robots.launch.py
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/start_robots.launch.py
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/launch/start_world.launch.py
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/worlds/map1.world
+-- Up-to-date symlink: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/worlds/map2.world
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+  ament_cmake_symlink_install_directory() can't find
+  '/home/unruly/testcm30082ros/src/start_rl_environment/modelss'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+
+[0m

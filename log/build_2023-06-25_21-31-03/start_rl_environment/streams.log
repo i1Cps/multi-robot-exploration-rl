@@ -1,0 +1,46 @@
+[0.009s] Invoking command in '/home/unruly/testcm30082ros/build/start_rl_environment': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/unruly/testcm30082ros/src/start_rl_environment -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/unruly/testcm30082ros/install/start_rl_environment
+[0.052s] -- The C compiler identification is GNU 11.3.0
+[0.097s] -- The CXX compiler identification is GNU 11.3.0
+[0.103s] -- Detecting C compiler ABI info
+[0.158s] -- Detecting C compiler ABI info - done
+[0.164s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.164s] -- Detecting C compile features
+[0.165s] -- Detecting C compile features - done
+[0.167s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.241s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.242s] -- Detecting CXX compile features
+[0.242s] -- Detecting CXX compile features - done
+[0.244s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.372s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.417s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.435s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.504s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.504s] -- Added test 'lint_cmake' to check CMake code style
+[0.505s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.507s] -- Added test 'xmllint' to check XML markup files
+[0.509s] -- Configuring done
+[0.511s] -- Generating done
+[0.512s] -- Build files have been written to: /home/unruly/testcm30082ros/build/start_rl_environment
+[0.515s] Invoked command in '/home/unruly/testcm30082ros/build/start_rl_environment' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/unruly/testcm30082ros/src/start_rl_environment -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/unruly/testcm30082ros/install/start_rl_environment
+[0.517s] Invoking command in '/home/unruly/testcm30082ros/build/start_rl_environment': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/unruly/testcm30082ros/build/start_rl_environment -- -j12 -l12
+[0.545s] Invoked command in '/home/unruly/testcm30082ros/build/start_rl_environment' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/unruly/testcm30082ros/build/start_rl_environment -- -j12 -l12
+[0.568s] Invoking command in '/home/unruly/testcm30082ros/build/start_rl_environment': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/unruly/testcm30082ros/build/start_rl_environment
+[0.573s] -- Install configuration: ""
+[0.573s] -- Execute custom install script
+[0.574s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/ament_index/resource_index/package_run_dependencies/start_rl_environment
+[0.580s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/ament_index/resource_index/parent_prefix_path/start_rl_environment
+[0.586s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/ament_prefix_path.sh
+[0.592s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/ament_prefix_path.dsv
+[0.598s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/path.sh
+[0.604s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/environment/path.dsv
+[0.611s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.bash
+[0.617s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.sh
+[0.623s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.zsh
+[0.629s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/local_setup.dsv
+[0.636s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/package.dsv
+[0.643s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/ament_index/resource_index/packages/start_rl_environment
+[0.649s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/cmake/start_rl_environmentConfig.cmake
+[0.656s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/cmake/start_rl_environmentConfig-version.cmake
+[0.662s] -- Symlinking: /home/unruly/testcm30082ros/install/start_rl_environment/share/start_rl_environment/package.xml
+[0.670s] Invoked command in '/home/unruly/testcm30082ros/build/start_rl_environment' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/unruly/testcm30082ros/build/start_rl_environment

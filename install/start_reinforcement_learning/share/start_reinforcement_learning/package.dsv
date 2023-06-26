@@ -1,0 +1,6 @@
+source;share/start_reinforcement_learning/hook/pythonpath.ps1
+source;share/start_reinforcement_learning/hook/pythonpath.dsv
+source;share/start_reinforcement_learning/hook/pythonpath.sh
+source;../../build/start_reinforcement_learning/share/start_reinforcement_learning/hook/pythonpath_develop.ps1
+source;../../build/start_reinforcement_learning/share/start_reinforcement_learning/hook/pythonpath_develop.dsv
+source;../../build/start_reinforcement_learning/share/start_reinforcement_learning/hook/pythonpath_develop.sh
