@@ -70,7 +70,7 @@ class Env():
         
         # Rewards
         self.goalReward = 200
-        self.collisionReward = -2000
+        self.collisionReward = -200
 
     # get obs space.  in future we will reutrn proper box but for now just
     # return .shape E.G just a number
