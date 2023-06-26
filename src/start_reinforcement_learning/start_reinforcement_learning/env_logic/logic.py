@@ -39,7 +39,6 @@ class Env():
         # Create a node for logging output to terminal
         self.logger = Logger()
         
-            
         # 36 rays + [angluar velocity, linear velocity]
         self.single_robot_observation_space = 38
         self.individual_robot_action_space = 2
@@ -137,8 +136,6 @@ class Env():
         dis_to_goal = round(math.hypot(
                 self.current_goal_location[0] - self.current_pose_x[robot_number], self.current_goal_location[1] - self.current_pose_y[robot_number]), 2)
         if dis_to_goal < 0.50:
-            self.reached_goal_counter+=1
-            self.total_goal_counter+=1
             return True
         return False
     
@@ -195,10 +192,10 @@ class Env():
     
     def end_of_episode_functions(self, robot_scans):
         # Quickly update position variables of robots then reset velocities
-            self.updateRobotPosition()
-            self.reset_cmd_vel()
-            # Add the velocities to the end of observation
-            self.addVelocitiesToObs(robot_scans)    
+        self.updateRobotPosition()
+        self.reset_cmd_vel()
+        # Add the velocities to the end of observation
+        self.addVelocitiesToObs(robot_scans)    
         
     # Steps the environment, (Reinforcement Learning term, it means - do this every time step)
     def step(self, action):
@@ -240,7 +237,8 @@ class Env():
         # Check if any robot has reached goal first
         if any(reachedGoal):
             self.logger.log('A robot has found the goal')
-            print('A Robot has found the goal')
+            self.reached_goal_counter+=1
+            self.total_goal_counter+=1
             # If so get basic rewards quickly
             rewards = self.getRewards()
             # Get index of robots who reached goal
@@ -338,10 +336,8 @@ class Env():
             self.initGoal = False
         
         # If robots have reached the goal node x times change location of goal
-        if self.reached_goal_counter > 10:
+        if self.reached_goal_counter > 50:
             #time.sleep(2)
-            #self.current_goal_location = self.restart_environment.spawn_goal()
-            print('Found Goal, The robots have found the goal: ', self.total_goal_counter, ' times')
             msg = 'Found Goal, The robots have found the goal: ' + str(self.total_goal_counter) + ' times'
             self.logger.log(msg)
 
@@ -417,7 +413,6 @@ class ReadOdom(Node):
 class Logger(Node):
     def __init__(self):
         super().__init__('logger')
-        
         
     def log(self, string):
         self.get_logger().info(string)
