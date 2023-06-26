@@ -9,9 +9,6 @@ from start_reinforcement_learning.maddpg_algorithm.buffer import MultiAgentRepla
 import torch as T
 import gc
 from ament_index_python.packages import get_package_share_directory
-#from launch_ros.actions import Node
-
-
 
 # Convert list of arrays to one flat array of observations
 def obs_list_to_state_vector(observation):
@@ -46,14 +43,13 @@ class MADDPGNode(Node):
         n_actions = env.action_space()
 
         chkpt_dir_var = os.path.join(get_package_share_directory('start_reinforcement_learning'),
-                                    'start_reinforcement_learning','tmp','maddpg')
+                                    'start_reinforcement_learning','deep_learning_weights','maddpg')
         
         # Initialize main algorithm
         maddpg_agents = MADDPG(actor_dims, critic_dims, n_agents, n_actions, 
                                fc1=512, fc2=512, tau=0.00025,
                                alpha=1e-4, beta=1e-3, scenario='robot',
                                chkpt_dir=chkpt_dir_var)
-                               #chkpt_dir='/home/unruly/ros2_ws/src/dqn_movement/dqn_movement/tmp/maddpg/')
 
         # Initialize memory
         memory = MultiAgentReplayBuffer(1000000, critic_dims, actor_dims, 
@@ -61,7 +57,6 @@ class MADDPGNode(Node):
 
         PRINT_INTERVAL = 10
         N_GAMES = 5000
-        MAX_STEPS = 50
         total_steps = 0
         score_history = []
         evaluate = False
@@ -73,7 +68,6 @@ class MADDPGNode(Node):
 
         # Currently 500 episodes
         for i in range(N_GAMES):
-            #self.get_logger().info('Episode: {}'.format(i))
             # reset to get initial observation
             obs = env.reset()
             # Convert dict -> list of arrays to go into 'obs_list_to_state_vector' function
@@ -103,10 +97,6 @@ class MADDPGNode(Node):
                 
                 terminal = [d or t for d, t in zip(list_done, list_trunc)]
 
-                """ # Every 25 steps episode is over
-                if episode_step >= MAX_STEPS:
-                    done = [True]*n_agents
-                """
                 # Store raw observation as well as list of each agent's observation, reward, and done value together
                 memory.store_transition(list_obs, state, list_actions, list_reward, list_obs_, state_, list_done)
 
