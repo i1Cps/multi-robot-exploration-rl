@@ -1,5 +1,5 @@
 # testcm30082ros
-## Usage
+## How to use (After installation)
 
 ### To start up the gazebo environment with the robots open a fresh terminal and run:
 ```
