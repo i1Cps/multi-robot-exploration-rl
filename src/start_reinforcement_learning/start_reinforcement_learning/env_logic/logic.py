@@ -69,8 +69,8 @@ class Env():
         self.min_angular_vel = -0.5
         
         # Rewards
-        self.goalReward = 20
-        self.collisionReward = -20
+        self.goalReward = 200
+        self.collisionReward = -200
 
     # get obs space.  in future we will reutrn proper box but for now just
     # return .shape E.G just a number
@@ -342,7 +342,8 @@ class Env():
             #time.sleep(2)
             #self.current_goal_location = self.restart_environment.spawn_goal()
             print('Found Goal, The robots have found the goal: ', self.total_goal_counter, ' times')
-            self.logger.log('Found Goal, The robots have found the goal: ', self.total_goal_counter, ' times')
+            msg = 'Found Goal, The robots have found the goal: ' + str(self.total_goal_counter) + ' times'
+            self.logger.log(msg)
 
             self.current_goal_location = self.restart_environment.move_goal()
             self.reached_goal_counter = 0
