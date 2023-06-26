@@ -46,3 +46,4 @@ colcon build --symlink-install
 sudo ubuntu-drivers autoinstall
 sudo reboot
 ```
+### WARNING - Sudo reboot will restart your system
