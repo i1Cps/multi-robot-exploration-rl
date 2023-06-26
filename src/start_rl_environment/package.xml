@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>
     This package is responsible for starting up gazebo and loading in the pre-made maps that are used to train the robots, 
-    Its also responsible for loading the actual robots, The different plugins and robot configurations can be found in this package
+    Its also responsible for loading the actual robots, The different plugins and robot configurations can be found in this package.
   </description>
   <maintainer email="nohacks2701@gmail.com">Theo Moore-Calters</maintainer>
   <license>TODO: License declaration</license>

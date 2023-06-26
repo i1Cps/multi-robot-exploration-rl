@@ -3,7 +3,10 @@
 <package format="3">
   <name>start_reinforcement_learning</name>
   <version>0.0.0</version>
-  <description>This package is responsible for training the robots using artificial intelligence to move autonomously in the provided environments. However its logic is NOT independent of the start_rl_environment</description>
+  <description>
+    This package is responsible for training the robots using artificial intelligence to move autonomously in the provided environments.
+    However its logic is NOT independent of the start_rl_environment.
+  </description>
   <maintainer email="nohacks2701@gmail.com">Theo Moore-Calters</maintainer>
   <license>TODO: License declaration</license>
 
