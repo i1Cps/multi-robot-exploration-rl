@@ -1,14 +1,14 @@
 # testcm30082ros
 ## Usage
 
-To start up the gazebo environment with the robots open a fresh terminal and run:
+### To start up the gazebo environment with the robots open a fresh terminal and run:
 ```
 cd testcm30082ros
 source install/setup.bash
 ros2 launch start_rl_environment main.launch.py
 ```
 
-To begin training the robots open a new fresh terminal and run:
+### To begin training the robots open a new fresh terminal and run:
 ```
 cd testcm30082ros
 source install/setup.bash
@@ -17,9 +17,9 @@ ros2 launch start_reinforcement_learning start_learning.launch.py
 
 ## Installation
 
-Install Ubunty 22.04 OS
+### Install Ubunty 22.04 OS
 
-Install [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)
+### Install [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)
 
 Permanantly source humble environment
 ```
@@ -41,7 +41,7 @@ pip install setuptools==58.2.0
 colcon build --symlink-install
 ```
 
-Update [graphics drivers](https://beebom.com/how-install-drivers-ubuntu/)
+### Update [graphics drivers](https://beebom.com/how-install-drivers-ubuntu/)
 ```
 sudo ubuntu-drivers autoinstall
 sudo reboot
