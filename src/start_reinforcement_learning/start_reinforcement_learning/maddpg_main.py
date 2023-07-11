@@ -49,7 +49,7 @@ class MADDPGNode(Node):
         maddpg_agents = MADDPG(actor_dims, critic_dims, n_agents, n_actions, 
                                fc1=512, fc2=512, tau=0.00025,
                                alpha=1e-4, beta=1e-3, scenario='robot',
-                               chkpt_dir=chkpt_dir_var)
+                               chkpt_dir=chkpt_dir_var, node_logger = self)
 
         # Initialize memory
         memory = MultiAgentReplayBuffer(1000000, critic_dims, actor_dims, 

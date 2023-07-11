@@ -68,8 +68,8 @@ class Env():
         self.min_angular_vel = -0.5
         
         # Rewards
-        self.goalReward = 200
-        self.collisionReward = -200
+        self.goalReward = 20
+        self.collisionReward = -20
 
     # get obs space.  in future we will reutrn proper box but for now just
     # return .shape E.G just a number

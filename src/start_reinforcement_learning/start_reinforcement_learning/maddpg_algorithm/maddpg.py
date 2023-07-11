@@ -9,10 +9,11 @@ torch.autograd.set_detect_anomaly(True)
 class MADDPG:
     def __init__(self, actor_dims, critic_dims, n_agents, n_actions, 
                  scenario='robot',  alpha=0.01, beta=0.01, fc1=512, 
-                 fc2=512, gamma=0.99, tau=0.01, chkpt_dir='tmp/maddpg/'):
+                 fc2=512, gamma=0.99, tau=0.01, chkpt_dir='tmp/maddpg/', node_logger = None):
         self.agents = []
         self.n_agents = n_agents
         self.n_actions = n_actions
+        self.logger = node_logger
         chkpt_dir += scenario 
         for agent_idx in range(self.n_agents):
             self.agents.append(Agent(actor_dims[agent_idx], critic_dims,  
@@ -57,6 +58,7 @@ class MADDPG:
             discrete_actions = self.discretize(continuous_actions)            
             actions[agent_id] = discrete_actions
             
+            
         return actions
 
     # Adjusts actor and critic wieghts
@@ -64,8 +66,8 @@ class MADDPG:
         # If memory is not the size of a batch size (1024) then return
         if not memory.ready():
             return
-        #print('learning')
-
+        
+        self.logger.get_logger().info("learning")
         # Samples algorithms central memory
         actor_states, states, actions, rewards, \
         actor_new_states, states_, dones = memory.sample_buffer()
