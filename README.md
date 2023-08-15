@@ -1,16 +1,16 @@
-# testcm30082ros
+# Robotic Exploration using Machine Learning
 ## How to use (After installation)
 
 ### To start up the gazebo environment with the robots open a fresh terminal and run:
 ```
-cd testcm30082ros
+cd robotic_exploration_ml
 source install/setup.bash
 ros2 launch start_rl_environment main.launch.py
 ```
 
 ### To begin training the robots open a new fresh terminal and run:
 ```
-cd testcm30082ros
+cd robotic_exploration
 source install/setup.bash
 ros2 launch start_reinforcement_learning start_learning.launch.py
 ```
@@ -27,8 +27,8 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 ```
 ### Download workspace
 ```
-git clone https://github.com/i1Cps/testcm30082ros.git
-cd testcm30082ros
+git clone https://github.com/i1Cps/robotic_exploration_ml.git
+cd robotic_exploration_ml
 
 ```
 
