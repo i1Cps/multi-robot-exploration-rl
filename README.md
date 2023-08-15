@@ -1,4 +1,7 @@
-# Robotic Exploration using Machine Learning
+# Multi-Robot Autonomous Exploration using Deep Reinforcement Learning
+
+This approach uses a centralized critic network and decentralized actor network to achieve cooperation between robots. It is simulated in Gazebo using ROS2 humble.
+
 ## How to use (After installation)
 
 ### To start up the gazebo environment with the robots open a fresh terminal and run:
@@ -17,7 +20,7 @@ ros2 launch start_reinforcement_learning start_learning.launch.py
 
 ## Installation
 
-### Install Ubunty 22.04 OS
+### Install Ubuntu 22.04 OS
 
 ### Install [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)
 
