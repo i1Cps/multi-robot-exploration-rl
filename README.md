@@ -7,6 +7,7 @@ This approach uses a centralized critic network and decentralized actor network 
 ### To start up the gazebo environment with the robots open a fresh terminal and run:
 ```
 cd robotic_exploration_ml
+source /opt/ros/humble/setup.bash
 source install/setup.bash
 ros2 launch start_rl_environment main.launch.py
 ```
@@ -14,6 +15,7 @@ ros2 launch start_rl_environment main.launch.py
 ### To begin training the robots open a new fresh terminal and run:
 ```
 cd robotic_exploration
+source /opt/ros/humble/setup.bash
 source install/setup.bash
 ros2 launch start_reinforcement_learning start_learning.launch.py
 ```
@@ -24,10 +26,6 @@ ros2 launch start_reinforcement_learning start_learning.launch.py
 
 ### Install [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)
 
-Permanantly source humble environment
-```
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-```
 ### Download workspace
 ```
 git clone https://github.com/i1Cps/robotic_exploration_ml.git
