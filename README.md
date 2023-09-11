@@ -43,11 +43,11 @@ This project employs a centralized critic network and decentralized actor networ
 
 The project contains two ROS2 packages:
 
-[**`start_rl_environment`**](#:factory: `start_rl_environment` ROS 2 Package)
+[**`start_rl_environment`**](#:factory:-`start_rl_environment`-ROS-2-Package)
 
 and
 
-[**`start_reinforcement_learning`**](#:robot: `start_reinforcement_learning` ROS 2 Package)
+[**`start_reinforcement_learning`**](#:robot:-`start_reinforcement_learning`-ROS-2-Package)
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#factory-start_rl_environment-ros-2-package)
