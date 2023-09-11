@@ -9,6 +9,16 @@
 ## ➤ Table of Contents
 
 * [➤ ::pencil:: About The Project](#-pencil-about-the-project)
+* [➤ :factory: `start_rl_environemnt` ROS 2 Package](#-factory-start_rl_environemnt-ros-2-package)
+	* [_Package Overview:_](#_package-overview_)
+	* [_Key Features and Functionalities:_](#_key-features-and-functionalities_)
+	* [_Usage:_](#_usage_)
+	* [_Purpose:_](#_purpose_)
+* [➤ :robot: `start_reinforcement_learning` ROS 2 Package](#-robot-start_reinforcement_learning-ros-2-package)
+	* [_Package Overview:_](#_package-overview_-1)
+	* [_Key Features and Functionalities:_](#_key-features-and-functionalities_-1)
+	* [_Usage:_](#_usage_-1)
+	* [_Purpose:_](#_purpose_-1)
 * [➤ ::pencil:: About The Project](#-pencil-about-the-project-1)
 * [➤ :rocket: Dependencies](#-rocket-dependencies)
 * [➤ :hammer: Basic Installation](#-hammer-basic-installation)
@@ -31,8 +41,115 @@ and
 
 **`start_reinforcement_learning`**
 
-{{ load:readme/start_rl_environment}}
-{{ load:readme/start_reinforcement_learning}}
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#factory-start_rl_environemnt-ros-2-package)
+
+## ➤ :factory: `start_rl_environemnt` ROS 2 Package
+
+**`start_rl_environment` ROS 2 Package**
+
+### _Package Overview:_
+
+The start_rl_environment package seamlessly integrates [ROS 2 Humble](https://docs.ros.org/en/humble/Releases/Release-Humble-Hawksbill.html) and [Gazebo](https://gazebosim.org/home) services, serving as a critical component within the project. Its primary responsibility is establishing and overseeing the simulated training environment for autonomous robotic agents. This pivotal role involves configuring an environment in which robots can cultivate their navigation and exploration skills through the application of Reinforcement Learning (RL).
+
+### _Key Features and Functionalities:_
+
+1.  **Robot Modelling**: Within `start_rl_environment`, you can locate the robot model in the `description` folder, represented by several `.xacro` files adhering to the Unified Robot Description Format (URDF). These files comprehensively capture the physical attributes, kinematics, and sensor configurations of the robots utilised in the simulation.
+    
+2.  **Map Simulation**: Within `start_rl_environment`, the map models can be found in the worlds folder. Each map model is constructed using a .world file that integrates individual .sdf files, simulating the physical layout of the environment. This comprehensive representation can include terrain, obstacles, landmarks, and other elements crucial for creating a realistic training scenario.
+    
+3. **Sensor Integration**: Sensor models and configurations, such as cameras, LiDARs, or other relevant sensors, can be included and configured within the package to mimic real-world sensor data collection.
+    
+4. **Launch System**: To simultaneously facilitate multiple robots' training, the package employs a sophisticated launch system implemented in .py files. This launch system ensures that numerous robot instances can be spawned and controlled within the simulated environment.
+    
+### _Usage:_
+
+-   To utilise start_rl_environment, please follow these steps after completing the basic installation:
+
+1. Navigate to the project directory:
+	```
+	cd robotic_exploration_ml
+	```
+2. Source the ROS 2 environment:
+	```
+	source /opt/ros/humble/setup.bash
+	```
+3. Source the project environment:
+	```
+	source install/setup.bash
+	```
+4. Launch the environment with specific map and robot configurations using the following command:
+	```
+	ros2 launch start_rl_environment main.launch.py --map_number <map_number> --robot_number <robot_number>
+	```
+
+Replace `<map_number>` with either `1` or `2` to specify the map for the simulation (default: 1).
+Replace `<robot_number>` with an integer between `1` and `7` to specify the number of robots in the simulation (default: 3).
+
+**WARNING**:   MAKE SURE THE ARGUMENTS BETWEEN `start_rl_environemnt` and `start_reinforcement_learning` ARE THE SAME 
+
+### _Purpose:_
+
+The primary objective of `start_rl_environment` is to create a realistic and adaptable training environment for the robots. Map 1 represents a simple corridor the robots can search, while map 2 has an L-shaped room to further illustrate the benefit of multi-robot exploration over singular exploration.
+
+This package is a fundamental building block in achieving the overarching goal of multi-robot autonomous exploration using deep reinforcement learning.                           
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#robot-start_reinforcement_learning-ros-2-package)
+
+## ➤ :robot: `start_reinforcement_learning` ROS 2 Package
+
+**`start_reinforcement_learning` ROS 2 Package**
+
+### _Package Overview:_
+
+The `start_reinforcement_learning` package applies the Multi-Agent Deep Deterministic Policy Gradient (MADDPG) algorithm to each robot in a decentralised-centralised fashion. It leverages PyTorch and CUDA to empower our autonomous robots with cooperative learning capabilities, facilitating efficient exploration.
+
+### _Key Features and Functionalities:_
+
+1.  **MADDPG Algorithm**: The [MADDPG](https://dl.acm.org/doi/10.5555/3295222.3295385) algorithm operates as an Actor-Critic algorithm, combining decentralisation during execution with centralised training. This unique approach offers significant advantages for cooperative learning among autonomous robots.
+
+	We allow each robot to use additional information about other robots during the training phase while ensuring that the extra information is not utilised during execution. This centralisation of training data enhances learning efficiency and cooperative behaviours among the robots, enabling them to collaborate effectively in complex environments.
+    
+2.  **Reward Function**: The package also handles reward computation. (Please note the current reward function in the code is a simple example for obvious reasons my reward function is not open source yet.
+
+3. **Episode Logic**:  The "Episode Logic" within the start_reinforcement_learning package includes collision handling, where robots receive negative rewards for colliding with obstacles, promoting obstacle avoidance. Goal achievement is encouraged as robots aim to reach specific goals, resulting in rewards upon success. To ensure efficiency in training, episodes are truncated if the maximum duration (MAX_STEPS) is reached without goal attainment, with robots receiving rewards based on their performance. This episode logic structure enhances the training process, enabling autonomous adaptation in complex environments.
+    
+5.  **Action Space Definition**: `start_reinforcement_learning` defines and manages the action space for each robot, enabling intelligent decision-making. The Action space can be optimized for both continuous and discrete action but it should be noted due to the nature of MADDPG, a continuous action space is more natural (Once again please note the current action space in the code is not final for my research and for obvious reasons cannot be revealed yet)
+    
+5. **Integration of Sensor Data and Simulation Communication**: The start_reinforcement_learning package seamlessly connects sensor data integration and simulation communication. It employs ROS 2's topic-based communication to establish a vital link between the Gazebo simulation environment and the package's environment logic. This mechanism efficiently exchanges sensor data between nodes, mainly LiDAR, command velocity and odometry data. This integration facilitates realistic training and empowers robots to enhance their perception and decision-making abilities.
+    
+
+### _Usage:_
+
+-   To utilise `start_reinforcement_learning`, please follow these steps after completing the basic installation:
+
+1. Navigate to the project directory:
+	```
+	cd robotic_exploration_ml
+	```
+2. Source the ROS 2 environment script:
+	```
+	source /opt/ros/humble/setup.bash
+	```
+3. Source the project environment:
+	```
+	source install/setup.bash
+	```
+4. Launch the MADDPG training process using the following command:
+	```
+	ros2 launch start_reinforcement_learning start_learning.launch.py map_number:=<map_number> robot_number:=<robot_number>
+	```
+	Replace `<map_number>` with either `1` or `2` to specify the map for the simulation (default: 1).
+
+	Replace `<robot_number>` with an integer between `1` and `7` to specify the number of robots in the simulation (default: 3).
+
+**WARNING**:   MAKE SURE THE ARGUMENTS BETWEEN `start_rl_environemnt` and `start_reinforcement_learning` ARE THE SAME.
+
+### _Purpose:_
+
+The primary purpose of the `start_reinforcement_learning` package is to enable multi-robot autonomous exploration using state-of-the-art MADDPG reinforcement learning techniques. By facilitating cooperative learning and enhancing exploration skills, this package empowers robots to efficiently navigate and explore complex environments. It serves as a vital component in achieving our project's goal of autonomous exploration in real-world scenarios.
+
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#pencil-about-the-project)
 
