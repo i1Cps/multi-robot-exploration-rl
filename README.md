@@ -70,7 +70,7 @@ The `start_rl_environment` package seamlessly integrates [ROS 2 Humble](https://
     
 ### _Usage:_
 
--   To utilise `start_rl_environment`, please follow these steps after completing the basic installation:
+-   To utilise `start_rl_environment`, please follow these steps after completing the basic [installation](#user-content--hammer-basic-installation):
 
 1. Navigate to the project directory:
 	```
@@ -115,18 +115,18 @@ The `start_reinforcement_learning` package applies the Multi-Agent Deep Determin
 
 	We allow each robot to use additional information about other robots during the training phase while ensuring that the extra information is not utilised during execution. This centralisation of training data enhances learning efficiency and cooperative behaviours among the robots, enabling them to collaborate effectively in complex environments.
     
-2.  **Reward Function**: The package also handles reward computation. (Please note the current reward function in the code is a simple example for obvious reasons my reward function is not open source yet.
+2.  **Reward Function**: The package also handles reward computation. (Please note the current reward function in the code is a simple example; for obvious reasons, my reward function has yet to be open source.)
 
-3. **Episode Logic**:  The "Episode Logic" within the `start_reinforcement_learning` package includes collision handling, where robots receive negative rewards for colliding with obstacles, promoting obstacle avoidance. Goal achievement is encouraged as robots aim to reach specific goals, resulting in rewards upon success. To ensure efficiency in training, episodes are truncated if the maximum duration (MAX_STEPS) is reached without goal attainment. This episode logic structure enhances the training process, enabling emrging behaviours and autonomous adaptation in complex environments.
+3. **Episode Logic**:  The "Episode Logic" within the `start_reinforcement_learning` package includes collision handling, where robots receive negative rewards for colliding with obstacles, promoting obstacle avoidance. The achievement of finding a goal is encouraged, as when a robot reaches a specific goal location, it results in a positive reward. To ensure efficiency in training, episodes are truncated if the maximum duration (MAX_STEPS) is reached without goal attainment. This episode logic structure enhances the training process, enabling emrging behaviours and autonomous adaptation in complex environments.
     
-5.  **Action Space Definition**: `start_reinforcement_learning` defines and manages the action space for each robot, enabling intelligent decision-making. The Action space can be optimized for both continuous and discrete action but it should be noted due to the nature of MADDPG, a continuous action space is more natural (Once again please note the current action space in the code is not final for my research and for obvious reasons cannot be revealed yet)
+4.  **Action Space Definition**: `start_reinforcement_learning` defines and manages the action space for each robot, enabling intelligent decision-making. The Action space can be optimized for both continuous and discrete action, but it should be noted that due to the nature of MADDPG, a continuous action space is more natural (Once again, please note that the current action space in the code is not final for my research and for obvious reasons cannot be revealed yet)
     
 5. **Integration of Sensor Data and Simulation Communication**: The `start_reinforcement_learning` package seamlessly connects sensor data integration and simulation communication. It employs ROS 2's topic-based communication to establish a vital link between the Gazebo simulation environment and the package's environment logic. This mechanism efficiently exchanges sensor data between nodes, mainly LiDAR, command velocity and odometry data. This integration facilitates realistic training and empowers robots to enhance their perception and decision-making abilities.
     
 
 ### _Usage:_
 
--   To utilise `start_reinforcement_learning`, please follow these steps after completing the basic installation:
+-   To utilise `start_reinforcement_learning`, please follow these steps after completing the basic [installation](#user-content--hammer-basic-installation):
 
 1. Navigate to the project directory:
 	```
