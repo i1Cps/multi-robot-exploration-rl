@@ -21,7 +21,7 @@
 
 ## ➤ ::pencil:: About The Project
 
-This project employs a centralized critic network and decentralized actor networks to facilitate cooperative behaviour among multiple robots. The simulation environment is implemented in Gazebo, utilizing ROS2's capabilities, And the robots are trained using a Multi-Agent Deep Reinforcement Learning approach.
+This project employs a centralized critic network and decentralized actor networks to facilitate cooperative behaviour among multiple robots. The simulation environment is implemented in Gazebo, utilizing ROS2's capabilities. The robots are then trained using a Multi-Agent Deep Reinforcement Learning approach.
 
 The project contains two ROS2 packages:
 
