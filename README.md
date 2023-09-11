@@ -21,7 +21,7 @@
 
 ## ➤ ::pencil:: About The Project
 
-This project employs a centralized critic network and decentralized actor networks to facilitate cooperative behaviour among multiple robots. The simulation environment is implemented in Gazebo, utilizing ROS2's capabilities, to demonstrate and test this multi-agent deep reinforcement learning (MADDPG) approach.
+This project employs a centralized critic network and decentralized actor networks to facilitate cooperative behaviour among multiple robots. The simulation environment is implemented in Gazebo, utilizing ROS2's capabilities, And the robots are trained using a Multi-Agent Deep Reinforcement Learning approach.
 
 The project contains two ROS2 packages:
 
