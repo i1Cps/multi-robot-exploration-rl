@@ -43,7 +43,7 @@ This project employs a centralized critic network and decentralized actor networ
 
 The project contains two ROS2 packages:
 
-[**`start_rl_environment`**](#start_rl_environment)
+[**`start_rl_environment`**](#start_rl_environment-1)
 
 and
 
