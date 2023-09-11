@@ -39,9 +39,9 @@
 
 ## ➤ ::pencil:: About The Project
 
-This project employs a centralized critic network and decentralized actor networks to facilitate cooperative behaviour among multiple robots. The simulation environment is implemented in Gazebo, utilizing ROS2's capabilities. The robots are then trained using a Multi-Agent Deep Reinforcement Learning approach.
+This project employs a centralized critic network and decentralized actor networks to facilitate cooperative behaviour among multiple robots. The simulation environment is implemented in Gazebo, utilizing ROS 2's capabilities. The robots are then trained using a Multi-Agent Deep Reinforcement Learning approach.
 
-The project contains two ROS2 packages:
+The project contains two ROS 2 packages:
 
 [**`start_rl_environment`**](#user-content--factory-start-rl_environment-ros-2-package)
 
@@ -60,7 +60,7 @@ The `start_rl_environment` package seamlessly integrates [ROS 2 Humble](https://
 
 ### _Key Features and Functionalities:_
 
-1.  **Robot Modelling**: Within `start_rl_environment`, you can locate the robot model in the `description` folder, represented by several `.xacro` files adhering to the Unified Robot Description Format (URDF). These files comprehensively capture the physical attributes, kinematics, and sensor configurations of the robots utilised in the simulation.
+1.  **Robot Modelling**: Within `start_rl_environment`, you can locate the robot model in the [`description`](src/start_rl_environment/description) folder, represented by several `.xacro` files adhering to the Unified Robot Description Format (URDF). These files comprehensively capture the physical attributes, kinematics, and sensor configurations of the robots utilised in the simulation.
     
 2.  **Map Simulation**: Within `start_rl_environment`, the map models can be found in the worlds folder. Each map model is constructed using a .world file that integrates individual .sdf files, simulating the physical layout of the environment. This comprehensive representation can include terrain, obstacles, landmarks, and other elements crucial for creating a realistic training scenario.
     
