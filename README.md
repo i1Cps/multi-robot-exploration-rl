@@ -49,6 +49,10 @@ and
 
 [**`start_reinforcement_learning`**](#user-content--robot-start_reinforcement_learning-ros-2-package)
 
+<p align="center">
+  <img src="images/gif.gif" alt="Logo" width="650" height="auto" />
+</p>
+
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#factory-start_rl_environment-ros-2-package)
 
