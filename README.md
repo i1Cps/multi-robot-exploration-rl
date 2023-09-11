@@ -1,6 +1,6 @@
 <!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">multi-robot-exploration_rl</h1>
 <p align="center">
-  <img src="images/maze.png" alt="Logo" width="550" height="auto" />
+  <img src="images/picture.png" alt="Logo" width="550" height="auto" />
 </p>
 
 
