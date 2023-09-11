@@ -1,10 +1,10 @@
 <!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">multi-robot-exploration_rl</h1>
 <p align="center">
-  <img src="images/picture.png" alt="Logo" width="450" height="auto" />
+  <img src="images/picture.png" alt="Logo" width="550" height="auto" />
 </p>
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#table-of-contents)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#table-of-contents)
 
 ## ➤ Table of Contents
 
@@ -35,7 +35,7 @@
 * [➤ License](#-license)
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#pencil-about-the-project)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#pencil-about-the-project)
 
 ## ➤ ::pencil:: About The Project
 
@@ -49,11 +49,8 @@ and
 
 [**`start_reinforcement_learning`**](#user-content--robot-start_reinforcement_learning-ros-2-package)
 
-<p align="center">
-  <img src="images/gif.gif" alt="Logo" width="650" height="auto" />
-</p>
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#factory-start_rl_environment-ros-2-package)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#factory-start_rl_environment-ros-2-package)
 
 ## ➤ :factory: `start_rl_environment` ROS 2 Package
 
@@ -104,7 +101,7 @@ The primary objective of `start_rl_environment` is to create a realistic and ada
 This package is a fundamental building block in achieving the overarching goal of multi-robot autonomous exploration using deep reinforcement learning.                           
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#robot-start_reinforcement_learning-ros-2-package)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#robot-start_reinforcement_learning-ros-2-package)
 
 ## ➤ :robot: `start_reinforcement_learning` ROS 2 Package
 
@@ -159,7 +156,7 @@ The primary purpose of the `start_reinforcement_learning` package is to enable m
 
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#floppy_disk-key-project-file-descriptions)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#floppy_disk-key-project-file-descriptions)
 
 ## ➤ :floppy_disk: Key Project File Descriptions
 
@@ -211,7 +208,7 @@ The primary purpose of the `start_reinforcement_learning` package is to enable m
 
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#rocket-dependencies)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#rocket-dependencies)
 
 ## ➤ :rocket: Dependencies
 
@@ -221,7 +218,7 @@ The MADDPG algorithm incorporates Pytorch while the environment uses Gazebo and 
 ![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge) ![suttin](https://custom-icon-badges.demolab.com/badge/-GazeboSim-FFBF00?style=for-the-badge&logo=package&logoColor=black)
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#hammer-basic-installation)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#hammer-basic-installation)
 
 ## ➤ :hammer: Basic Installation
 
@@ -251,7 +248,7 @@ sudo reboot
 ```
 **WARNING - Sudo reboot will restart your system**
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#coffee-buy-me-a-coffee)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#coffee-buy-me-a-coffee)
 
 ## ➤ :coffee: Buy me a coffee
 Whether you use this project, have learned something from it, or just like it, please consider supporting it by buying me a coffee, so I can dedicate more time on open-source projects like this (҂⌣̀_⌣́)
@@ -260,7 +257,7 @@ Whether you use this project, have learned something from it, or just like it, p
 
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#scroll-credits)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#scroll-credits)
 
 ## ➤ :scroll: Credits
 
@@ -270,7 +267,7 @@ Theo Moore-Calters
 [![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/i1Cps) [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/theo-moore-calters)
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#license)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)](#license)
 
 ## ➤ License
 	
