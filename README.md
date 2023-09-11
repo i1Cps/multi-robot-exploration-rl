@@ -1,6 +1,6 @@
 <!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">multi-robot-exploration_rl</h1>
 <p align="center">
-  <img src="images/picture.png" alt="Logo" width="550" height="auto" />
+  <img src="images/picture.png" alt="Logo" width="450" height="auto" />
 </p>
 
 
@@ -49,6 +49,9 @@ and
 
 [**`start_reinforcement_learning`**](#user-content--robot-start_reinforcement_learning-ros-2-package)
 
+<p align="center">
+  <img src="images/gif.gif" alt="Logo" width="650" height="auto" />
+</p>
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#factory-start_rl_environment-ros-2-package)
 
