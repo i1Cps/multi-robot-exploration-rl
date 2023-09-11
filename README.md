@@ -12,10 +12,6 @@
 * [➤ :rocket: Dependencies](#-rocket-dependencies)
 * [➤ ::pencil:: About The Project](#-pencil-about-the-project-1)
 * [➤ :hammer: Basic Installation](#-hammer-basic-installation)
-	* [Install [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)](#install-ros2-humblehttpsdocsrosorgenhumbleinstallationhtml)
-	* [Download workspace](#download-workspace)
-	* [Install package dependencies](#install-package-dependencies)
-	* [Update [graphics drivers](https://beebom.com/how-install-drivers-ubuntu/)](#update-graphics-drivershttpsbeebomcomhow-install-drivers-ubuntu)
 * [➤ :coffee: Buy me a coffee](#-coffee-buy-me-a-coffee)
 * [➤ :scroll: Credits](#-scroll-credits)
 * [➤ License](#-license)
@@ -62,17 +58,17 @@ The MADDPG incorporates Pytorch while the environment uses Gazebo and ROS 2
 
 ## ➤ :hammer: Basic Installation
 
- ### Install Ubuntu 22.04 OS
+ **Install Ubuntu 22.04 OS**
 
-### Install [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)
+**Install [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)**
 
-### Download workspace
+**Download workspace**
 ```
 git clone https://github.com/i1Cps/robotic_exploration_ml.git
 cd robotic_exploration_ml
 ```
 
-### Install package dependencies
+**Install package dependencies**
 ```
 sudo rosdep init
 rosdep update
@@ -81,7 +77,7 @@ pip install setuptools==58.2.0
 colcon build --symlink-install
 ```
 
-### Update [graphics drivers](https://beebom.com/how-install-drivers-ubuntu/)
+**Update [graphics drivers](https://beebom.com/how-install-drivers-ubuntu/)**
 ```
 sudo ubuntu-drivers autoinstall
 sudo reboot
