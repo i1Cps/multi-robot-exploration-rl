@@ -59,15 +59,33 @@ Whether you use this project, have learned something from it, or just like it, p
 <a href="https://www.buymeacoffee.com/i1Cps" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 
+### To start up the gazebo environment with the robots open a fresh terminal and run:
+```
+cd robotic_exploration_ml
+source install/setup.bash
+ros2 launch start_rl_environment main.launch.py
+```
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#scroll-credits)
+### To begin training the robots open a new fresh terminal and run:
+```
+cd robotic_exploration
+source install/setup.bash
+ros2 launch start_reinforcement_learning start_learning.launch.py
+```
 
 ## ➤ :scroll: Credits
 
 Theo Moore-Calters 
 
 
-[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/i1Cps) [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/theo-moore-calters)
+Permanantly source humble environment
+```
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+```
+### Download workspace
+```
+git clone https://github.com/i1Cps/robotic_exploration_ml.git
+cd robotic_exploration_ml
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#license)
