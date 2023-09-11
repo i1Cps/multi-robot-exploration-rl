@@ -1,4 +1,4 @@
-<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">multi-robot-exploration_rl</h1>
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">multi-robot-exploration-rl</h1>
 <p align="center">
   <img src="images/picture.png" alt="Logo" width="550" height="auto" />
 </p>
@@ -74,7 +74,7 @@ The `start_rl_environment` package seamlessly integrates [ROS 2 Humble](https://
 
 1. Navigate to the project directory:
 	```
-	cd robotic_exploration_ml
+	cd multi-robot-exploration-rl
 	```
 2. Source the ROS 2 environment:
 	```
@@ -130,7 +130,7 @@ The `start_reinforcement_learning` package applies the Multi-Agent Deep Determin
 
 1. Navigate to the project directory:
 	```
-	cd robotic_exploration_ml
+	cd multi-robot-exploration-rl
 	```
 2. Source the ROS 2 environment script:
 	```
@@ -228,8 +228,8 @@ The MADDPG algorithm incorporates Pytorch while the environment uses Gazebo and 
 
 **Download workspace**
 ```
-git clone https://github.com/i1Cps/robotic_exploration_ml.git
-cd robotic_exploration_ml
+git clone https://github.com/i1Cps/multi-robot-exploration-rl.git
+cd multi-robot-exploration-rl
 ```
 
 **Install package dependencies**
