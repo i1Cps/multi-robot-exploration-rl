@@ -162,8 +162,9 @@ The primary purpose of the `start_reinforcement_learning` package is to enable m
 
 ### `start_rl_environment`
 #### Robot Model Files
-* `robot_core.xacro`: The main file that describes the visual, collision and inertia properties of the robots
-* `lidar.xacro`: Defines the property of LiDARs on each robot
+* [`robot_core.xacro`](src/start_rl_environment/description/robot_core.xacro): The main file that describes the visual, collision and inertia properties of the robots.
+
+* `lidar.xacro`: Defines the property of LiDARs on each robot.
 #### Launch Files
 * `main.launch.py`: This is the main launch file; it makes two further calls to the `start_world.launch.py` file and the `start_robots.launch.py` file. It takes two optional arguments: map_number for the map you want to use and robot_number for the number of robots you want to train.
 
@@ -173,7 +174,7 @@ The primary purpose of the `start_reinforcement_learning` package is to enable m
 * `spawn_robots.launch.py`: This file is responsible for spawning any robot passed to it; it first accesses the robot properties by unpacking the launch substitutions from `start_robots.launch.py`. It then feeds those properties to the Gazebo 'spawn_entity' Node. Which will spawn the robot on the first gazebo server it finds running. It then calls the robot state publisher node, responsible for publishing the robot's state information, typically related to its pose (position and orientation) in a specific reference frame.
 
 #### World Files
-* `map1.world`: The file responsible for building the map 1 world
+* `map1.world`: The file responsible for building the map 1 world.
 
 
 
