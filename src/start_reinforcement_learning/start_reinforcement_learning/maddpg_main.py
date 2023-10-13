@@ -32,7 +32,7 @@ class MADDPGNode(Node):
         #gc.collect()
 
         # Set environment with action size
-        env = Env()
+        env = Env(robot_number, map_number)
         self.get_logger().info(f"Map nuumber: {map_number}")
         n_agents = env.number_of_robots
         
@@ -100,7 +100,7 @@ class MADDPGNode(Node):
                 # Store raw observation as well as list of each agent's observation, reward, and done value together
                 memory.store_transition(list_obs, state, list_actions, list_reward, list_obs_, state_, list_done)
 
-                if total_steps % 500 == 0 and not evaluate:
+                if total_steps % 100 == 0 and not evaluate:
                     maddpg_agents.learn(memory)
 
                 # Set new obs to current obs
@@ -108,8 +108,9 @@ class MADDPGNode(Node):
                 score += sum(list_reward)
                 total_steps += 1
                 episode_step += 1
-
-            score_history.append(score)
+            # Calcualte the average score per robot
+            score_history.append(score/robot_number)
+            # Average the last 100 recent scores
             avg_score = np.mean(score_history[-100:])
             if not evaluate:
                 if avg_score > best_score:

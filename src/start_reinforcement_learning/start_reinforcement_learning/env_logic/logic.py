@@ -63,7 +63,7 @@ class Env():
 
         # Robot velocity restraints 
         self.max_linear_vel = 0.6
-        self.min_linear_vel = 0
+        self.min_linear_vel = 0.05
         self.max_angular_vel = 0.5
         self.min_angular_vel = -0.5
         
@@ -148,7 +148,7 @@ class Env():
             currentReward = startingReward
             # Reward for moving a little fast, 
             if self.current_linear_velocity[i] < 0.10:
-                currentReward += -5 
+                currentReward += -0.5
             robotRewards.append(currentReward)
         return robotRewards                
     
